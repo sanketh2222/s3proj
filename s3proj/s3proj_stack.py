@@ -15,8 +15,7 @@ class S3ProjStack(core.Stack):
             "MyBucket",
             bucket_name="myfirstbucket2808",
             versioned=False,
-            encryption=_s3.BucketEncryption.KMS_MANAGED
-            
-            
+            encryption=_s3.BucketEncryption.S3_MANAGED,
+            block_public_access=_s3.BlockPublicAccess
             
         )
